@@ -1,0 +1,11 @@
+[project]
+name = "financial-manth-agent"
+version = "0.1.0"
+description = "Agent Financial Manth IA — analyse financière TPE (cabinet Manthelot Associés)"
+requires-python = ">=3.12"
+dependencies = [
+    "mistralai-agents[koyeb]",
+]
+
+[tool.mistralai.agents]
+entrypoint = "main:agent"
