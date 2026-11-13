@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Financial Manth IA — Analyse financière TPE | Manthelot Associés</title>
+<meta name="description" content="Financial Manth IA : analyse financière pour TPE, par le cabinet Manthelot Associés. Copiez le prompt, collez-le dans votre IA préférée et obtenez un rapport complet.">
+<style>
+:root { --bleu:#143c78; --bleu2:#0077FF; --fond:#f7f9fc; --ligne:#dde4ef; --sombre:#2A276A; }
+* { box-sizing:border-box; }
+body { font-family:'Segoe UI',Arial,sans-serif; color:#1c2733; background:var(--fond); margin:0; line-height:1.55; }
+main { max-width:560px; margin:0 auto; padding:1.2rem 1rem 3rem; }
+header { text-align:center; padding:1.4rem 0 .6rem; }
+.logo { width:210px; max-width:80%; height:auto; }
+h1 { color:var(--bleu); font-size:1.6rem; margin:.6rem 0 .2rem; }
+.soustitre { color:#44506a; margin:0 0 1rem; font-size:1rem; }
+.badge { display:inline-block; background:#e8f1ff; color:var(--bleu); border:1px solid #cfe0f7;
+        border-radius:999px; padding:.25rem .8rem; font-size:.8rem; font-weight:600; margin:.15rem; }
+.card { background:#fff; border:1px solid var(--ligne); border-radius:14px; padding:1.1rem 1.2rem;
+        margin:1rem 0; box-shadow:0 2px 10px rgba(20,60,120,.06); }
+.card h2 { color:var(--bleu); font-size:1.05rem; margin:.2rem 0 .5rem; }
+.card p { margin:.35rem 0; font-size:.95rem; }
+ol { margin:.4rem 0 .2rem 1.2rem; padding:0; font-size:.95rem; }
+ol li { margin:.45rem 0; }
+.btn { display:block; width:100%; text-align:center; border:none; border-radius:12px;
+       padding:.95rem 1rem; font-size:1.02rem; font-weight:700; cursor:pointer;
+       text-decoration:none; margin:.45rem 0; }
+.btn-primaire { background:var(--bleu); color:#fff; }
+.btn-secondaire { background:#fff; color:var(--bleu); border:2px solid var(--bleu); }
+.btn:active { transform:scale(.99); }
+#copie-ok { display:none; text-align:center; color:#0b7a3d; font-weight:600; font-size:.92rem; margin:.3rem 0; }
+.contact { text-align:center; }
+.contact a { color:var(--bleu); font-weight:600; text-decoration:none; }
+.avert { font-size:.8rem; color:#556; background:#eef3fa; border-left:4px solid var(--bleu);
+        padding:.6rem .8rem; border-radius:6px; font-style:italic; }
+footer { text-align:center; color:#889; font-size:.8rem; margin-top:1.6rem; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <svg class="logo" viewBox="0 0 480 160" role="img" aria-label="Manthelot Associés">
+    <rect width="480" height="160" fill="#FFFFFF"/>
+    <g transform="translate(30,16)">
+      <rect x="0" y="0" width="64" height="64" fill="#2A276A" transform="rotate(8 32 32)"/>
+      <rect x="24" y="30" width="64" height="64" fill="#0077FF" transform="rotate(8 56 62)"/>
+      <rect x="48" y="60" width="64" height="64" fill="#3D3D3D" transform="rotate(8 80 92)"/>
+    </g>
+    <text x="160" y="88" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#000000">Manthelot Associés</text>
+  </svg>
+  <h1>Financial Manth IA</h1>
+  <p class="soustitre">Votre analyse financière TPE, en quelques minutes</p>
+  <span class="badge">🇫🇷 Français</span><span class="badge">€ Euro</span><span class="badge">📊 Comptabilité française</span>
+</header>
+
+<div class="card">
+  <h2>📋 Comment ça marche (3 étapes)</h2>
+  <ol>
+    <li><strong>Copiez le prompt</strong> — bouton ci-dessous, il se copie automatiquement.</li>
+    <li><strong>Collez-le</strong> dans votre IA préférée (Le Chat, ChatGPT, Claude, Gemini…) comme premier message.</li>
+    <li><strong>Suivez le guide</strong> : donnez le nom de votre entreprise, votre secteur et vos chiffres (bilan, compte de résultat, capture d'écran ou saisie manuelle). L'IA vous pose les questions et produit votre rapport.</li>
+  </ol>
+</div>
+
+<div class="card">
+  <h2>🚀 Lancer l'analyse</h2>
+  <button class="btn btn-primaire" onclick="copierPrompt()">1. Copier le prompt Financial Manth IA</button>
+  <p id="copie-ok">✅ Prompt copié ! Collez-le maintenant dans votre IA.</p>
+  <a class="btn btn-secondaire" href="https://chat.mistral.ai/chat" target="_blank" rel="noopener">2. Ouvrir Le Chat (Mistral)</a>
+  <a class="btn btn-secondaire" href="https://chatgpt.com/" target="_blank" rel="noopener">Ou ouvrir ChatGPT</a>
+</div>
+
+<div class="card contact">
+  <h2>📞 Un conseil adapté à votre situation ?</h2>
+  <p>L'IA vous donne une première analyse. Pour un accompagnement personnalisé, contactez le cabinet&nbsp;:</p>
+  <p>✉️ <a href="mailto:joude.manthelot@gmail.com">joude.manthelot@gmail.com</a><br>
+     📱 <a href="tel:+33752342897">+33 7 52 34 42 97</a></p>
+</div>
+
+<p class="avert">Financial Manth IA est une aide à l'analyse et à la décision. Il ne constitue ni une certification comptable, ni un conseil professionnel, juridique ou fiscal, et ne remplace ni un expert-comptable ni un commissaire aux comptes.</p>
+
+<footer>Manthelot Associés — Financial Manth IA</footer>
+</main>
+
+<script>
+const PROMPT_URL = "https://raw.githubusercontent.com/joudemanthelot-boop/financial-manth/main/skills/financial-manth-ia/SKILL.md";
+let promptTexte = null;
+
+async function chargerPrompt() {
+  if (promptTexte) return promptTexte;
+  const rep = await fetch(PROMPT_URL);
+  if (!rep.ok) throw new Error("chargement impossible");
+  let t = await rep.text();
+  const i = t.indexOf("FINANCIAL MANTH IA");
+  if (i >= 0) t = t.slice(i);
+  promptTexte = t;
+  return promptTexte;
+}
+
+async function copierPrompt() {
+  const ok = document.getElementById("copie-ok");
+  try {
+    const t = await chargerPrompt();
+    await navigator.clipboard.writeText(t);
+  } catch (e) {
+    try {
+      const t = await chargerPrompt();
+      const ta = document.createElement("textarea");
+      ta.value = t; document.body.appendChild(ta); ta.select();
+      document.execCommand("copy"); ta.remove();
+    } catch (e2) {
+      ok.textContent = "⚠️ Copie impossible : ouvrez le lien du prompt et copiez-le manuellement.";
+      ok.style.display = "block";
+      window.open(PROMPT_URL, "_blank");
+      return;
+    }
+  }
+  ok.textContent = "✅ Prompt copié ! Collez-le maintenant dans votre IA.";
+  ok.style.display = "block";
+}
+</script>
+</body>
+</html>
